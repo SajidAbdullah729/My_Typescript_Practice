@@ -1,4 +1,5 @@
 // Function Declaration
+
 function fun(name: string): string {
   return `Hello, ${name}!`;
 }
@@ -6,6 +7,7 @@ function fun(name: string): string {
 console.log(fun('Alice')); // Output: Hello, Alice!
 
 // Function Expression
+
 const fun = function(name: string): string {
   return `Hello, ${name}!`;
 };
@@ -13,16 +15,19 @@ const fun = function(name: string): string {
 console.log(fun('Bob')); // Output: Hello, Bob!
 
 // Arrow Function (Fat Arrow)
+
 const fun = (name: string): string => `Hello, ${name}!`;
 
 console.log(fun('Charlie')); // Output: Hello, Charlie!
 
 // Anonymous Function
+
 setTimeout(function() {
   console.log('Time’s up!');
 }, 1000);
 
 // Anonymous Arrow Function
+
 setTimeout(() => {
   console.log('Time’s up!');
 }, 1000);
@@ -35,6 +40,7 @@ function fun(...numbers: number[]): number {
 console.log(fun(1, 2, 3, 4)); // Output: 10
 
 // Optional Parameters
+
 function fun(name: string, age?: number): string {
   return age ? `${name} is ${age} years old.` : `Hello, ${name}!`;
 }
@@ -43,6 +49,7 @@ console.log(fun('Alice')); // Output: Hello, Alice!
 console.log(fun('Bob', 25)); // Output: Bob is 25 years old.
 
 // Default Parameters
+
 function fun(name: string, age: number = 30): string {
   return `${name} is ${age} years old.`;
 }
@@ -51,6 +58,7 @@ console.log(fun('Alice')); // Output: Alice is 30 years old.
 console.log(fun('Bob', 25)); // Output: Bob is 25 years old.
 
 // Function Overloading
+
 function fun(name: string): string;
 function fun(name: string, age: number): string;
 function fun(name: string, age?: number): string {
@@ -65,6 +73,7 @@ console.log(fun('Alice')); // Output: Hello, Alice!
 console.log(fun('Bob', 25)); // Output: Bob is 25 years old.
 
 // Function as a Type
+
 let fun: (name: string) => string;
 
 fun = (name: string) => `Hello, ${name}!`;
@@ -72,6 +81,7 @@ fun = (name: string) => `Hello, ${name}!`;
 console.log(fun('Charlie')); // Output: Hello, Charlie!
 
 // Methods Inside Classes
+
 class Person {
   name: string;
 
@@ -110,6 +120,7 @@ person.name = 'Frank';
 console.log(person.name); // Output: Frank
 
 // Asynchronous Functions (async/await)
+
 async function fun(url: string): Promise<string> {
   const response = await fetch(url);
   const data = await response.json();
@@ -121,6 +132,7 @@ fun('https://api.example.com/data')
   .catch(error => console.error(error));
 
 // Generator Functions
+
 function* fun(limit: number): Generator<number, void, unknown> {
   let count = 0;
   while (count < limit) {
