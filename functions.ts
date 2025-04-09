@@ -1,9 +1,7 @@
 // Function Declaration
-<<<<<<< HEAD
 
-=======
 // A simple function declaration to define a function. It is the most common way to define functions.
->>>>>>> aee6dfa0e6f2d187f02810683f97e4bff5d45354
+
 function fun(name: string): string {
   return `Hello, ${name}!`;
 }
@@ -11,11 +9,10 @@ function fun(name: string): string {
 console.log(fun('Alice')); // Output: Hello, Alice!
 
 // Function Expression
-<<<<<<< HEAD
 
-=======
+
 // A function defined as part of an expression, assigned to a variable. Useful for anonymous functions or when passing functions as arguments.
->>>>>>> aee6dfa0e6f2d187f02810683f97e4bff5d45354
+
 const fun = function(name: string): string {
   return `Hello, ${name}!`;
 };
@@ -23,31 +20,26 @@ const fun = function(name: string): string {
 console.log(fun('Bob')); // Output: Hello, Bob!
 
 // Arrow Function (Fat Arrow)
-<<<<<<< HEAD
 
-=======
+
 // A shorthand syntax for writing functions. It also captures the `this` context from the surrounding code.
->>>>>>> aee6dfa0e6f2d187f02810683f97e4bff5d45354
+
 const fun = (name: string): string => `Hello, ${name}!`;
 
 console.log(fun('Charlie')); // Output: Hello, Charlie!
 
 // Anonymous Function
-<<<<<<< HEAD
 
-=======
 // A function without a name. It is typically used when passing functions as arguments (e.g., in callbacks).
->>>>>>> aee6dfa0e6f2d187f02810683f97e4bff5d45354
+
 setTimeout(function() {
   console.log('Time’s up!');
 }, 1000);
 
 // Anonymous Arrow Function
-<<<<<<< HEAD
 
-=======
 // A shorthand version of anonymous functions using the arrow syntax.
->>>>>>> aee6dfa0e6f2d187f02810683f97e4bff5d45354
+
 setTimeout(() => {
   console.log('Time’s up!');
 }, 1000);
@@ -61,11 +53,9 @@ function fun(...numbers: number[]): number {
 console.log(fun(1, 2, 3, 4)); // Output: 10
 
 // Optional Parameters
-<<<<<<< HEAD
 
-=======
 // Allows parameters to be optional, so the function can be called with fewer arguments.
->>>>>>> aee6dfa0e6f2d187f02810683f97e4bff5d45354
+
 function fun(name: string, age?: number): string {
   return age ? `${name} is ${age} years old.` : `Hello, ${name}!`;
 }
@@ -74,11 +64,9 @@ console.log(fun('Alice')); // Output: Hello, Alice!
 console.log(fun('Bob', 25)); // Output: Bob is 25 years old.
 
 // Default Parameters
-<<<<<<< HEAD
 
-=======
 // Allows setting default values for parameters if they are not provided.
->>>>>>> aee6dfa0e6f2d187f02810683f97e4bff5d45354
+
 function fun(name: string, age: number = 30): string {
   return `${name} is ${age} years old.`;
 }
@@ -87,11 +75,9 @@ console.log(fun('Alice')); // Output: Alice is 30 years old.
 console.log(fun('Bob', 25)); // Output: Bob is 25 years old.
 
 // Function Overloading
-<<<<<<< HEAD
 
-=======
 // Allows multiple function signatures for the same function name, providing different behaviors based on the parameters passed.
->>>>>>> aee6dfa0e6f2d187f02810683f97e4bff5d45354
+
 function fun(name: string): string;
 function fun(name: string, age: number): string;
 function fun(name: string, age?: number): string {
@@ -106,11 +92,9 @@ console.log(fun('Alice')); // Output: Hello, Alice!
 console.log(fun('Bob', 25)); // Output: Bob is 25 years old.
 
 // Function as a Type
-<<<<<<< HEAD
 
-=======
 // TypeScript allows you to define the function's type explicitly, ensuring type safety when using functions.
->>>>>>> aee6dfa0e6f2d187f02810683f97e4bff5d45354
+
 let fun: (name: string) => string;
 
 fun = (name: string) => `Hello, ${name}!`;
@@ -118,9 +102,7 @@ fun = (name: string) => `Hello, ${name}!`;
 console.log(fun('Charlie')); // Output: Hello, Charlie!
 
 // Methods Inside Classes
-<<<<<<< HEAD
 
-=======
 // Functions inside a class. Methods are used to define behaviors related to the class.
 >>>>>>> aee6dfa0e6f2d187f02810683f97e4bff5d45354
 class Person {
@@ -162,11 +144,9 @@ person.name = 'Frank';
 console.log(person.name); // Output: Frank
 
 // Asynchronous Functions (async/await)
-<<<<<<< HEAD
 
-=======
 // Used to handle asynchronous code in a more readable way. The async function always returns a promise.
->>>>>>> aee6dfa0e6f2d187f02810683f97e4bff5d45354
+
 async function fun(url: string): Promise<string> {
   const response = await fetch(url);
   const data = await response.json();
@@ -178,11 +158,9 @@ fun('https://api.example.com/data')
   .catch(error => console.error(error));
 
 // Generator Functions
-<<<<<<< HEAD
 
-=======
 // Allows a function to return multiple values sequentially using `yield`. It can be paused and resumed.
->>>>>>> aee6dfa0e6f2d187f02810683f97e4bff5d45354
+
 function* fun(limit: number): Generator<number, void, unknown> {
   let count = 0;
   while (count < limit) {
