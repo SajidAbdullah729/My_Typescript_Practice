@@ -104,7 +104,7 @@ console.log(fun('Charlie')); // Output: Hello, Charlie!
 // Methods Inside Classes
 
 // Functions inside a class. Methods are used to define behaviors related to the class.
->>>>>>> aee6dfa0e6f2d187f02810683f97e4bff5d45354
+
 class Person {
   name: string;
 
